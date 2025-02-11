@@ -1,0 +1,6 @@
+*.rpyc
+*.rpa
+*.log
+persistent
+*.save
+cache/
