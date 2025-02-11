@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 9, in script
+    show character_normal at bottom with dissolve
+  File "game/script.rpy", line 9, in <module>
+    show character_normal at bottom with dissolve
+NameError: name 'bottom' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 9, in script
+    show character_normal at bottom with dissolve
+  File "E:\renpy-8.3.3-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "E:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "E:\renpy-8.3.3-sdk\renpy\ast.py", line 1070, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "E:\renpy-8.3.3-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\renpy-8.3.3-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 9, in <module>
+    show character_normal at bottom with dissolve
+NameError: name 'bottom' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.3.24111502
+Reflexes Script 1.0
+Mon Dec  2 19:01:38 2024
